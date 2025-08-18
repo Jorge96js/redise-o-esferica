@@ -1,0 +1,82 @@
+@use 'variables' as v;
+@use 'sass:color';
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: v.$white;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: v.$fuente_textos;
+    font-size: 1.6rem;
+    min-height: 100%;
+    background-color: v.$white;
+    &.body-scroll{
+        //padding: 8rem 0 0 0;
+    }
+}
+
+a{
+    color: v.$black;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+.btn{
+    text-align: center;
+    padding: .8rem;
+    background-color: v.$mainColor;
+    color: v.$white;
+    border-radius: .8rem;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    border: none;
+    &:hover{
+        background-color: color.adjust(v.$mainColor, $lightness: 5%);
+    }
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.bodySpan{
+    background-color: rgba(0, 0, 0, .329);
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+}
+
+.mt-10{
+    margin-top: 2.5rem;
+}

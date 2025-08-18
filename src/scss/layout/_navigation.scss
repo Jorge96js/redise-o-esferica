@@ -1,0 +1,138 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$white;
+    height: 9rem;
+    gap: 3rem;
+    padding: 0 2rem;
+    @include m.tablet{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 99999999;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5rem;
+        width: 90%;
+        height: 8rem;
+        border-radius: 10rem;
+        background-color: color.adjust(v.$mainColor, $lightness: -30%);
+        margin: 2rem auto;
+
+    }
+
+    &__logo{
+        width: 7rem;
+        img{
+            width: 100%;
+        }
+    }
+    &__menu{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 0;
+        font-weight:normal;
+        color: v.$black;
+        a{
+            transition: color .3s ease-in-out;
+            @include m.desktop{
+                color: v.$white;
+            }
+            &:hover{
+                color: v.$mainColor;
+            }
+        }
+        &.show{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            left: 0;
+            top: 0;
+            padding: 10rem 4rem 1rem 4rem;
+            background-color: v.$white;
+            box-shadow: 0 0 5px #0000003b;
+            margin: 0;
+            z-index: 99;
+
+        }
+        @include m.desktop{
+            position: initial;
+            transform: translateX(0%);
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        box-shadow: 3px 3px 15px #0000003b;
+        margin: 0 auto; 
+        animation-name: slide-in;
+        animation-duration: .5s;
+        @include m.desktop{
+        width: 90%;
+        margin-top: 2rem;
+        @keyframes slide-in {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+        }
+    }
+
+
+}
+
+
+.mobile-button{
+    display: block;
+    padding: 1.5rem!important;
+    box-shadow: 0 0 5px #0000003b;
+    @include m.boton(v.$mainColor, v.$white);
+    @include m.desktop{
+        display: none;
+    }
+    i{
+        font-size: 3rem;
+    }
+}
+
+
+.nav-page{
+    background-color: v.$white;
+    position: initial;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: 2px 2px 3px #0000003b;
+    
+    .navbar__menu{
+        a{
+            color: v.$black;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: v.$mainColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esferica</title>
+    
+    <link href="/public/build/js/aos-master/dist/aos.css" rel="stylesheet">
+    <script src="/public/build/js/aos-master/dist/aos.js" defer></script>
+
+    <link rel="stylesheet" href="/public/build/css/app.css">
+    <link rel="stylesheet" href="/public/assets/fontawesome-free-7.0.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="/public/build/js/bundle.min.js" defer></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!--Navegacion-->
+        <nav class="navbar" id="navbar">
+        <div class="navbar__logo">
+            <a href="/">
+            <img src="/public/build/img/Logo Esferica-1.svg" alt="logo esferica">
+            </a>
+        </div>
+
+        <ul class="navbar__menu" id="navMenu" >
+            <a href="/" class="navbar__link">Inicio</a>
+            <a href="/single.html" class="navbar__link">Quienes Somos</a>
+            <a href="/" class="navbar__link">Proyectos</a>
+            <a href="/" class="navbar__link">Noticias</a>
+            <a href="/" class="navbar__link">Multimedia</a>
+            <a href="/" class="navbar__link">Participá</a>
+            <a href="/" class="navbar__link">Contacto</a>
+        </ul>
+
+            <button data-menu="close" id="mobileButton" class="mobile-button"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <!--Header-->
+    <header class="header">
+        <span class="header__layout"></span>
+        <div class="header__background swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/public/build/img/header_bg.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/public/build/img/header_bg2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/public/build/img/header_bg3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="header__content">
+            <p class="header__subtitle">ORGANIZACIÓN</p>
+            <h1 class="header__title">ESFÉRICA</h1>
+            <a href="" class="header__button">Sumate</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+            <!--Cards destacados--->
+            <section class="featured-cards">
+                <div class="featured-cards__card" style="background-image: url('https://images.pexels.com/photos/414798/pexels-photo-414798.jpeg');">
+                    <span></span>
+                    <div class="featured-cards__body">    
+                    <h3>Lorem ipsum dolor sit amet,</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi laboriosam illo dignissimos ducimus error laborum eaque. Cum, voluptatibus reiciendis.</p>
+                    </div>
+                </div>
+
+                <div class="featured-cards__card" style="background-image: url('https://images.pexels.com/photos/33033492/pexels-photo-33033492.jpeg');">
+                    <div class="featured-cards__body">    
+                    <h3>Lorem ipsum dolor sit amet,</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi laboriosam illo dignissimos ducimus error laborum eaque. Cum, voluptatibus reiciendis.</p>
+                    </div>
+                </div>
+
+                <div class="featured-cards__card" style="background-image: url('https://images.pexels.com/photos/771319/pexels-photo-771319.jpeg');">
+                    <div class="featured-cards__body">    
+                    <h3>Lorem ipsum dolor sit amet,</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi laboriosam illo dignissimos ducimus error laborum eaque. Cum, voluptatibus reiciendis.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="">
+                            <!-- Iconos --->
+
+                        <section class="benefits">
+
+                            <div class="benefits__item">
+                                <i class="fa-solid fa-seedling"></i>
+                                <p class="benefits__label">Biodiversidad</p>
+                            </div>
+                            <div class="benefits__item">
+                                <i class="fa-solid fa-people-group"></i>
+                                <p class="benefits__label">Participación comunitaria</p>
+                            </div>
+                            <div class="benefits__item">
+                                <i class="fa-solid fa-recycle"></i>
+                                <p class="benefits__label">Economía circular</p>
+                            </div>
+                            <div class="benefits__item">
+                                <i class="fa-solid fa-dove"></i>
+                                <p class="benefits__label">Fauna urbana</p>
+                            </div>
+                        </section>
+
+                        <!--Seccion de informacion-->
+                        <section class="section-info" >
+                        <div class="section-info__text" data-aos="fade-right"  data-aos-offset="200" data-aos-duration="500">
+                            <h2 class="section-info__title">Transformación ecológica con justicia social</h2>
+                            <p class="section-info__paragraph">
+                                En Esférica trabajamos por una transición socioecológica justa desde el territorio. Promovemos la educación ambiental situada, la participación ciudadana y el cuidado colectivo de los ecosistemas urbanos y rurales. Creemos que el cambio empieza desde lo común.
+                            </p>
+                            <a href="/" class="section-info__btn">Ver mas</a>
+                        </div>
+
+                        <div class="section-info__cards" data-aos="fade-left"  data-aos-offset="200" data-aos-duration="500">
+                            <div class="section-info__card">
+                                <img loading="lazy"  src="https://images.pexels.com/photos/414798/pexels-photo-414798.jpeg" alt="imagen">
+                            </div>
+                            <div class="section-info__card">
+                                <img  loading="lazy" src="https://images.pexels.com/photos/771319/pexels-photo-771319.jpeg" alt="imagen">
+                            </div>
+                        </div>
+                    </section>
+            </div>
+
+        <section  class="projects">
+            <h2> <i class="fa fa-tools"></i> Proyectos y Acciones</h2>
+
+            <div class="projects__cards">
+
+                <article class="projects__cards--card"  data-aos="fade-right"  data-aos-offset="200" data-aos-duration="500">
+                    <div class="projects__cards--image">
+                        <img loading="lazy" src="https://esferica.org.ar/wp-content/uploads/2023/07/huerta-1.jpeg" alt="">
+                    </div>
+
+                    <div class="projects__cards--body">
+                        <h3>Educación ambiental en barrios</h3>
+                        <p>Santiago del Estero - 2025</p>
+                        <p>Talleres y capacitaciones sobre agroecología y reciclaje.</p>
+                    </div>
+                </article>
+
+                <article class="projects__cards--card"  data-aos="fade-right"  data-aos-offset="200" data-aos-duration="400">
+                    <div class="projects__cards--image">
+                        <img loading="lazy" src="https://esferica.org.ar/wp-content/uploads/2023/07/image08028.jpeg" alt="">
+                    </div>
+
+                    <div class="projects__cards--body">
+                        <h3>Educación ambiental en barrios</h3>
+                        <p>Santiago del Estero - 2025</p>
+                        <p>Talleres y capacitaciones sobre agroecología y reciclaje.</p>
+                    </div>
+                </article>
+
+
+                <article class="projects__cards--card"  data-aos="fade-right"  data-aos-offset="200" data-aos-duration="500">
+                    <div class="projects__cards--image">
+                        <img loading="lazy" src="https://esferica.org.ar/wp-content/uploads/2023/07/image08028.jpeg" alt="">
+                    </div>
+
+                    <div class="projects__cards--body">
+                        <h3>Educación ambiental en barrios</h3>
+                        <p>Santiago del Estero - 2025</p>
+                        <p>Talleres y capacitaciones sobre agroecología y reciclaje.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section resources">
+
+            <h2><i class="fa-regular fa-file-lines"></i> Recursos</h2>
+            <h3 class="resources__subtitle">Encuentra nuestras publicaciones, guías ambientales y archivos descargables.</h3>
+
+            <div class="resources__cards">
+
+                <article data-aos="fade-right" data-aos-duration="500" class="resources__cards--card">
+                    <h3>Guía Ambiental 2023</h3>
+                    <p>Una guía completa sobre prácticas sostenibles para el medio ambiente.</p>
+                    <a href="guia_ambiental_2023.pdf" class="resources__cards--btn" download>Descargar PDF</a>
+                </article>
+
+                <article data-aos="fade-right" data-aos-duration="600"  class="resources__cards--card">
+                    <h3>Publicación: Cambio Climático</h3>
+                    <p>Información clave sobre el impacto del cambio climático y cómo actuar.</p>
+                    <a href="guia_ambiental_2023.pdf" class="resources__cards--btn" download>Descargar PDF</a>
+                </article>
+
+                <article data-aos="fade-left" data-aos-duration="500"  class="resources__cards--card">
+                    <h3>Manual de Reciclaje</h3>
+                    <p>Aprende cómo reciclar correctamente con este manual práctico.</p>
+                    <a href="guia_ambiental_2023.pdf" class="resources__cards--btn" download>Descargar PDF</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="section section-topics">
+
+           <!--- <h2 class="section-topics__title"><i class="fa-solid fa-leaf"></i> Temáticas</h2> -->
+
+            <div class="section-topics__row">
+                <!---Primera fila-->
+
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://img.freepik.com/free-photo/people-taking-part-high-protocol-event_23-2150951375.jpg?t=st=1753122531~exp=1753126131~hmac=d28de30b1e46411bfa43f019fab0bc5aa41958e5915e7caa0483a4f7880583e7&w=900" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-people-group"></i>
+                        <p class="section-topics__label">¿Quienes Somos?</p>
+                    </div>
+                </article>
+
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://img.freepik.com/free-photo/close-up-transplanting-process-plants_23-2149080689.jpg?t=st=1753127404~exp=1753131004~hmac=68d070a2735c6cecaa0a37e4031351ac38e2cfd2fb34d419740ad08185e5e0da&w=900" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-book-open-reader"></i>
+                        <p class="section-topics__label">Ed. Ambiental</p>
+                    </div>
+                </article>
+
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://resizer.glanacion.com/resizer/v2/geronimo-momo-benavides-junto-al-grupo-de-5ZU7XEIUBJA7XO3HRKYBLKMMI4.jpg?auth=6bf49781fbd45b3a9d891ad9da797c56c9efb30ef121ed5b2429190bf2761e4e&width=1280&height=854&quality=70&smart=true" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-user-graduate"></i>
+                        <p class="section-topics__label">Juventudes Esferica</p>
+                    </div>
+                </article>
+
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://media.tycsports.com/files/2022/02/20/392728/momo-vs-viruzz_862x485.png" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-globe"></i>
+                        <p class="section-topics__label">Relaciones Internacionales</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="section-topics__row">
+
+                <!---Segunda fila -->
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://i.pinimg.com/474x/1a/7e/8a/1a7e8a39c8532194c2536d36904198ba.jpg" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                        <p class="section-topics__label">Proyectos</p>
+                    </div>
+                </article>
+
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoCL5kS34jq0BvSjWm8Cup7kU-vHw1LCIDrA&s" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-scale-balanced"></i>
+                        <p class="section-topics__label">Asesoramiento Legal</p>
+                    </div>
+                </article>
+
+                <article class="section-topics__item">
+                    <span class="section-topics__item--layout">
+                    </span>
+                    <div class="section-topics__item--background">
+                        <img src="https://pbs.twimg.com/profile_images/1716240706828632064/dFaceHoZ_200x200.jpg" alt="About background image">
+                    </div>
+
+                    <div class="section-topics__content">
+                        <i class="fas fa-hands-helping"></i>
+                        <p class="section-topics__label">Sumate!</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--Seccion para el formulario-->
+
+        <section class="suscribe">  
+
+            <div class="suscribe__content">
+                <div class="suscribe__content--text">
+                    <h2>Suscribite a nuestro newsletter.</h2>
+                    <p>Recibí en tu correo todas las noticias, actividades, actualizaciones y contenidos exclusivos sobre los proyectos, eventos y acciones que impulsa Esférica.</p>
+                </div>
+                <div class="suscribe__form">
+                    <form action="">
+                        <p for="email">Manténgase actualizado</p>
+                        <div class="suscribe__form--field">
+                            <input type="email" placeholder="Ingrese su email" id="email">
+                            <button>Suscribe</button>
+                        </div>
+                        <p class="aviso">Su correo estará seguro con nosotros, libre de spam.</p>
+                    </form>
+                </div>
+            </div>
+            <span class="layout"></span>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+    <div class="footer__content">
+        
+        <div class="footer__logo">
+
+        <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.23 369.77"><defs><style>.cls-1{fill:none;stroke:#6b7e55;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:93.54px;font-family:Tahoma;}.cls-2,.cls-3{fill:#6b7f55;}</style></defs><path class="cls-1" d="M137.83,289.56c1.21-4.44,2.59-8.81,4.11-13.1" transform="translate(-80.32 -152.76)"/><path class="cls-1" d="M487.54,393.33a182.46,182.46,0,0,1-346.84,1.89" transform="translate(-80.32 -152.76)"/><path class="cls-1" d="M410.41,290.49c-11.39-77.87-50.32-135.23-96.6-135.23s-85.12,57.23-96.56,135" transform="translate(-80.32 -152.76)"/><path class="cls-1" d="M218.54,393.06c12.86,73.64,50.65,127,95.27,127s82.43-53.35,95.28-127" transform="translate(-80.32 -152.76)"/><line class="cls-1" x1="233.5" y1="240.35" x2="233.5" y2="367.27"/><line class="cls-1" x1="233.5" y1="2.5" x2="233.5" y2="137.64"/><path class="cls-1" d="M169.13,226.59h0Z" transform="translate(-80.32 -152.76)"/><line class="cls-1" x1="62.68" y1="249.88" x2="405.28" y2="249.88"/><path class="cls-1" d="M143,402.64" transform="translate(-80.32 -152.76)"/><path class="cls-1" d="M176.4,456.64h0Z" transform="translate(-80.32 -152.76)"/><text class="cls-2" transform="translate(0 226.83) scale(1.14 1)">ESFÉRICA</text><path class="cls-1" d="M141.94,276.46a182.46,182.46,0,0,1,347.94,13.42" transform="translate(-80.32 -152.76)"/><path class="cls-1" d="M141,281.55h0Z" transform="translate(-80.32 -152.76)"/><path class="cls-1" d="M486.23,281.27,141,281.55Z" transform="translate(-80.32 -152.76)"/><line class="cls-3" x1="64.05" y1="249.88" x2="401.95" y2="249.88"/><line class="cls-3" x1="88.81" y1="73.84" x2="378.19" y2="73.84"/><line class="cls-1" x1="90.09" y1="73.7" x2="376.45" y2="73.29"/><line class="cls-1" x1="96.08" y1="303.88" x2="372.09" y2="303.88"/></svg>
+
+        </div>
+
+        <div class="footer__info">
+
+        <section class="footer__social" aria-label="Redes sociales">
+            <a href="https://www.instagram.com/organizacionesferica" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/organizacionesferica" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/organizacionesferica" target="_blank" aria-label="X (Twitter)">
+            <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/organizacionesferica" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com/@organizacionesferica" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            </a>
+        </section>
+
+        <nav class="footer__nav" aria-label="Enlaces útiles">
+            <a href="/" class="footer__link">Inicio</a>
+            <a href="/#quienes-somos" class="footer__link">Quiénes Somos</a>
+            <a href="/proyectos" class="footer__link">Proyectos</a>
+            <a href="/noticias" class="footer__link">Noticias</a>
+            <a href="/multimedia" class="footer__link">Multimedia</a>
+            <a href="/participa" class="footer__link">Participá</a>
+            <a href="/contacto" class="footer__link">Contacto</a>
+        </nav>
+        </div>
+    </div>
+
+    <!-- Derechos -->
+    <div class="footer__legal">
+        <p>© 2025 Organización Esférica. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+    </div>
+
+    <script src="/public/build/js/swiper/swiper-bundle.js" ></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: color.adjust(v.$black, $blackness: 70% );
+    height: auto;
+    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        gap: 5rem;
+        @include m.tablet{
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+    &__logo{
+        width: 9rem;
+        padding: 1rem;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        a{
+            color: v.$white;
+            font-size: 2rem;
+            padding: .5rem 1rem;
+            text-align: left;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color: v.$mainColor;
+            }
+        }
+        
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include m.tablet{
+            flex-direction: row;
+            gap: 10rem;
+        }
+    }
+
+    &__social{
+        display: flex;
+        gap: 1rem;
+        align-items: end;
+        a{
+            font-size: 2.5rem;
+            color: v.$white;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: v.$mainColor;
+            }
+        }
+    }
+    &__legal{
+        display: flex;
+        justify-content: space-between;
+        color: v.$white;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        border-top: 1px solid color.adjust(v.$white, $lightness: -80% );
+    }
+}

@@ -1,0 +1,24 @@
+@use 'variables' as v;
+@use 'sass:color';
+
+.NotFoundContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    h1{
+        font-size: 20rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        font-family: v.$fuente_headings;
+        color: v.$mainColor;
+        font-weight: bold;
+        text-shadow: .8rem 0 color.adjust(v.$mainColor, $blackness: 10%);
+    }
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
