@@ -125,9 +125,8 @@
         <section class="section section-topics">
 
            <!--- <h2 class="section-topics__title"><i class="fa-solid fa-leaf"></i> Temáticas</h2> -->
-
+<!--
             <div class="section-topics__row">
-                <!---Primera fila-->
 
                 <article class="section-topics__item">
                     <span class="section-topics__item--layout">
@@ -185,7 +184,7 @@
 
             <div class="section-topics__row">
 
-                <!---Segunda fila -->
+                
                 <article class="section-topics__item">
                     <span class="section-topics__item--layout">
                     </span>
@@ -227,7 +226,7 @@
 
             </div>
 
-        </section>
+        </section> -->
 
         <!--Seccion para el formulario-->
 

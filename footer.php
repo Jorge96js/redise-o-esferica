@@ -41,7 +41,11 @@
     <!-- Derechos -->
     <div class="footer__legal">
         <p>© 2025 Organización Esférica. Todos los derechos reservados.</p>
+
+        <p id="developed">Desarrollado por <strong><a target="_blank" href="https://www.binaraweb.com.ar">Binaraweb</a></strong></p>
     </div>
+
+
     </footer>
     </div>
 
